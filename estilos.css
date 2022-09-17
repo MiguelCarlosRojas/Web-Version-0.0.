@@ -247,6 +247,7 @@ nav .enlaces a:hover{
   width: 30%;
   margin: auto;
   text-align: center;
+  margin-bottom: var(--espacios-contenido);
 }
 .caja-servicios>h4{
   margin-bottom: var(--espacios);
