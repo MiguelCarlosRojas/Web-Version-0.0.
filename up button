@@ -1,0 +1,161 @@
+//boton.js
+ window.onscroll =function(){
+    if(document.documentElement.scrollTop > 100) {
+        document.querySelector('.go-top.container')
+        .classList.add('show');
+    }else{ 
+        document.querySelector('.go-top.container')
+        .classList.remove('show');   
+    }
+}
+
+document.querySelector('.go-top.container')
+.addEventListener('click',()=> { 
+window.scrollTo({ 
+    top: 0,
+    behavior: 'smooth'
+ });
+});
+
+
+
+
+   //boton.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boton</title>
+</head>
+<body>
+    </header>
+        <nav>
+            <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+><div class="container"> ...
+</div>
+
+<div class="go-top container">   
+    <div class="go-top boton">
+        <i class="fas fa-chevron-up"></i>
+
+    </div>      
+</div>       
+    
+<script src="gotop.js"></script>
+</body>
+</html>
+
+
+
+
+//boton.css
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{ 
+    font-size: 10px;
+ }
+
+ /*barra de navegación */
+header{
+    height: 6rem;
+    background-color: #333;
+    padding: 0 5rem;
+ }
+
+ ul li{
+    display: inline-block;
+ }
+ ul line a{
+    line-height: 6rem;
+    color: #fff; 
+    text-decoration:none;
+    font-size: 2rem;
+    padding: 0 1rem;   
+  }
+
+  .container{
+    max-width: 80rem;
+    margin: auto;
+    padding-top: 4rem;
+    }
+
+    .container p{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+     }
+
+     /*GOTOP*/
+
+     .go-top-container{ 
+        position: fixed;
+        bottom: 4rem;
+        right: 4rem;
+        width: 6.6rem;
+        height: 6.6rem;
+        z-index: -1;
+      }
+      .go-top-button{ 
+        width: 0rem;
+        height: 0rem;
+        background: #2071b2;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .2s;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+       }
+
+       .go-top-button i{ 
+        position: absolute;
+        font-size: 1.7rem;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0); 
+        color: #fff;
+        transition: .2s;
+        }
+
+        .show{ 
+            z-index: 10;
+        }
+        
+        .show .go-top-button{ 
+            animation: popup .3s ease-in-out;
+            width: 6.6rem;
+            height: 6.6rem;
+            z-index: 11;
+         }
+
+        .show i{ 
+            transform: translate(-50%, -50%) scale(1);
+          }
+
+        @keyframes popup{ 
+            0%{
+                width: 0rem;
+                height: 0rem;
+            }
+            50%{
+            width: 8rem;
+            height: 8rem;
+            }
+            100%{
+                width: 6.6rem;
+                height: 6.6rem;
+            }
+        }
