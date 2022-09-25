@@ -1,3 +1,5 @@
+// Descarga
+
 var boton = document.getElementById("download");
 var contador = 15;
 var etiqueta = document.createElement("p");

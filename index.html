@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Hola, esta es la versión 0.5, del proyecto de trabajo en equipo, 
+<!-- Hola, esta es la Alfa 0.6, del proyecto de trabajo en equipo, 
 gracias por visitar, espero que esta versión te ayude a ver, a como estamos creando la web -->
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Página web Beta 0.6</title>
     <link rel="shortcut icon" href="./img/logo3e.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/button.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
@@ -38,9 +39,14 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
         <div class="textos">
             <h1>Nuestra Señora de la Asunción</h1>
             <h2>Preparar a los Estudianes para el Exito en un Mundo Cambiante.</h2>
-        </div>
+        </div> 
     </header>
-    <main>
+    <div class="go-top-container">   
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </div>      
+    </div>
+   <main>
         <section class="team contenedor" id="equipo">
             <h3>Nuestro equipo</h3>
             <p class="after">Conoce a la gente asombrosa y creativa</p>
@@ -103,14 +109,14 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
             <div class="botones-work">
                 <ul>
                     <li class="filter active" data-nombre='todos'>Todos</li>
-                    <li class="filter" data-nombre='atletismo'>Atletismo</li>
-                    <li class="filter" data-nombre='ajedrez'>Ajedrez</li>
-                    <li class="filter" data-nombre='multideporte'>Multideporte</li>
-                    <li class="filter" data-nombre='artattack'>Art Attack</li>
+                    <li class="filter" data-nombre='matemática'>Matemática</li>
+                    <li class="filter" data-nombre='comunicación'>Comunicación</li>
+                    <li class="filter" data-nombre='fisica'>Ed.Fisica</li>
+                    <li class="filter" data-nombre='arte'>Arte y Cultura</li>
                 </ul>
             </div>
             <div class="galeria-work">
-                <div class="cont-work ajedrez">
+                <div class="cont-work matemática">
                     <div class="img-work">
                         <img src="img/programacion1.jpeg" alt="">
                     </div>
@@ -118,7 +124,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
                         <h4>Ajedrez</h4>
                     </div>
                 </div>
-                <div class="cont-work ajedrez">
+                <div class="cont-work matemática">
                     <div class="img-work">
                         <img src="img/programacion2.jpeg" alt="">
                     </div>
@@ -126,7 +132,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
                         <h4>Ajedrez</h4>
                     </div>
                 </div>
-                <div class="cont-work ajedrez">
+                <div class="cont-work matemática">
                     <div class="img-work">
                         <img src="img/programacion3.jpeg" alt="">
                     </div>
@@ -134,7 +140,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
                         <h4>Ajedrez</h4>
                     </div>
                 </div>
-                <div class="cont-work artattack">
+                <div class="cont-work comunicación">
                     <div class="img-work">
                         <img src="img/banner2.jpg" alt="">
                     </div>
@@ -142,7 +148,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
                         <h4>Art Attack</h4>
                     </div>
                 </div>
-                <div class="cont-work artattack">
+                <div class="cont-work comunicación">
                     <div class="img-work">
                         <img src="img/background.jpg" alt="">
                     </div>
@@ -150,7 +156,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
                         <h4>Art Attack</h4>
                     </div>
                 </div>
-                <div class="cont-work artattack">
+                <div class="cont-work comunicación">
                     <div class="img-work">
                         <img src="img/basketball.png" alt="">
                     </div>
@@ -158,7 +164,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
                         <h4>Art Attack</h4>
                     </div>
                 </div>
-                <div class="cont-work atletismo">
+                <div class="cont-work arte">
                     <div class="img-work">
                         <img src="img/cafeteria.png" alt="">
                     </div>
@@ -166,7 +172,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
                         <h4>Atletismo</h4>
                     </div>
                 </div>
-                <div class="cont-work atletismo">
+                <div class="cont-work arte">
                     <div class="img-work">
                         <img src="img/diseño2.jpeg" alt="">
                     </div>
@@ -174,7 +180,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
                         <h4>Atletismo</h4>
                     </div>
                 </div>
-                <div class="cont-work atletismo">
+                <div class="cont-work arte">
                     <div class="img-work">
                         <img src="img/diseño3.jpeg" alt="">
                     </div>
@@ -182,7 +188,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
                         <h4>Atletismo</h4>
                     </div>
                 </div>
-                <div class="cont-work multideporte">
+                <div class="cont-work fisica">
                     <div class="img-work">
                         <img src="img/marketing1.jpeg" alt="">
                     </div>
@@ -190,7 +196,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
                         <h4>Multideporte</h4>
                     </div>
                 </div>
-                <div class="cont-work multideporte">
+                <div class="cont-work fisica">
                     <div class="img-work">
                         <img src="img/marketing2.jpeg" alt="">
                     </div>
@@ -198,7 +204,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
                         <h4>Multideporte</h4>
                     </div>
                 </div>
-                <div class="cont-work multideporte">
+                <div class="cont-work fisica">
                     <div class="img-work">
                         <img src="img/marketing3.jpeg" alt="">
                     </div>
@@ -215,7 +221,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
                     </button>
                 </div>
             </div>
-        </section>
+        </section> 
     </main>
     <footer id="contacto">
         <div class="footer contenedor">
@@ -236,6 +242,7 @@ gracias por visitar, espero que esta versión te ayude a ver, a como estamos cre
     </footer>
     <script src="js/jquery.js"></script>
     <script src="js/time.js"></script>
+    <script src="js/button.js"></script>
     <script src="js/main.js"></script>
     <script src="js/filtro.js"></script>
 </body>
