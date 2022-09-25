@@ -15,6 +15,46 @@
   box-sizing: border-box;
 }
 
+.content-descarga{
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.descarga-ahora{
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 20px;
+  background: #db9001;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.descarga-ahora:hover{
+  opacity: 0,9;
+}
+
+.btn-descarga{
+  display: inline-block;
+  padding: 15px 25px;
+  background: #2576b1;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  outline: 0px;
+  cursor: pointer;
+}
+
+.btn-descarga:hover{
+  opacity: 0.9;
+}
+
+.content-descarga i{
+  margin-left: 5px;
+}
+
 body {
   font-family: 'open sans';
   background: var(--fondo);
